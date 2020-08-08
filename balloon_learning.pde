@@ -1,3 +1,4 @@
+int y=150;
 void setup()
 {
   size(500,500);
