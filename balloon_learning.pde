@@ -1,5 +1,5 @@
 int y;
-int dy=-1;
+int dy=0;
 void setup()
 {
   size(500,500);
