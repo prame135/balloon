@@ -16,3 +16,11 @@ void create_balloon(int x,int y2,int ballsize,int linelong)
   ellipse(x,y2,ballsize,ballsize);
   line(x,y2+(ballsize/2),x,y2+(ballsize/2)+linelong);
 }
+void move_balloon()
+{
+  y=y+dy;
+  if(y<-150)
+  {
+    y=height+150;
+  }
+}
