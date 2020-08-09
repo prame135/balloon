@@ -8,8 +8,7 @@ void draw()
 {
   y=y+dy;
   background(255); 
-  ellipse(250,y,80,80);
-  line(250,y+40,250,y+150);
+  create_balloon(250,y,80,110);
 }
 void create_balloon(int x,int y,int ballsize,int linelong)
 {
