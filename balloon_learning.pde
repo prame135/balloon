@@ -21,6 +21,7 @@ void move_balloon()
 {
   if(mousePressed)
   {
+    delay(150);
     dy=0;
   }
   y=y+dy;
