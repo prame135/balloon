@@ -19,7 +19,7 @@ void create_balloon(int x,int y2,int ballsize,int linelong)
 }
 void move_balloon()
 {
-  if(mousePressed)
+  if(mousePressed&&dy==-1)
   {
     delay(150);
     dy=0;
