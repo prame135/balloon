@@ -21,6 +21,6 @@ void move_balloon()
   y=y+dy;
   if(y<-150)
   {
-    y=height+150;
+    y=500+150;
   }
 }
