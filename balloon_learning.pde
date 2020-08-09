@@ -8,7 +8,7 @@ void draw()
 {
   background(255); 
   create_balloon(250,150,80,110);
-  y=y+dy;
+  move_balloon();
 }
 void create_balloon(int x,int y2,int ballsize,int linelong)
 {
