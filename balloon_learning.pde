@@ -11,3 +11,8 @@ void draw()
   ellipse(250,y,80,80);
   line(250,y+40,250,y+150);
 }
+void create_balloon(int x,int y,int ballsize,int linelong)
+{
+  ellipse(x,y,ballsize,ballsize);
+  line(x,y+(ballsize/2),x,y+(ballsize/2)+linelong);
+}
