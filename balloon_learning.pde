@@ -24,6 +24,11 @@ void move_balloon()
     delay(150);
     dy=0;
   }
+  else if(mousePressed&&dy==0)
+  {
+    delay(150);
+    dy=-1;
+  }
   y=y+dy;
   if(y<-150)
   {
