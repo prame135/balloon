@@ -1,4 +1,4 @@
-int y=150;
+int y;
 int dy=-1;
 void setup()
 {
@@ -6,12 +6,13 @@ void setup()
 }
 void draw()
 {
-  y=y+dy;
   background(255); 
-  create_balloon(250,y,80,110);
+  create_balloon(250,150,80,110);
+  y=y+dy;
 }
-void create_balloon(int x,int y,int ballsize,int linelong)
+void create_balloon(int x,int y2,int ballsize,int linelong)
 {
-  ellipse(x,y,ballsize,ballsize);
-  line(x,y+(ballsize/2),x,y+(ballsize/2)+linelong);
+  y2=y;
+  ellipse(x,y2,ballsize,ballsize);
+  line(x,y2+(ballsize/2),x,y2+(ballsize/2)+linelong);
 }
